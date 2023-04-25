@@ -34,6 +34,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&family=Roboto&display=swap');
       .card{box-shadow: 0 4px 8px 0 rgba(185, 134, 134, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);}
+      .card-200{height: 200px;width: 180px;}
       body{font-family: 'Lato', sans-serif;background-color: #F6F6F6;}
       h2{font-family: 'Montserrat', sans-serif;}
     </style>
@@ -43,100 +44,7 @@
   <article class="card m-4 border-lightgray">
     <section class="card-header"><h2 class="text-darkgray">Colores</h2></section>
     <section class="card-body">
-      <div class="row p-4 text-start">
-        <div class="col mb-2">
-          <button class="btn btn-block btn-cyan" id="Cyan" onclick="copiar('#0dcaf0')">Copiar</button>
-          <label class="text-cyan" for="Cyan">Cyan</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-darkblue" onclick="copiar('#2b6be1')" id="Darkblue">Copiar</button>
-          <label class="text-darkblue" for="Darkblue">Darkblue</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-darkgray" onclick="copiar('#555')" id="Darkgray">Copiar</button>
-          <label class="text-darkgray" for="Darkgray">Darkgray</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-green" onclick="copiar('#198754')" id="Green">Copiar</button>
-          <label class="text-green" for="Green">Green</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-indigo" onclick="copiar('#6610f2')" id="Indigo">Copiar</button>
-          <label class="text-indigo" for="Indigo">Indigo</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-lemon" onclick="copiar('#80eb15')" id="Lemon">Copiar</button>
-          <label class="text-lemon" for="Lemon">Lemon</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-lightgray" onclick="copiar('#DDD')" id="Lightgray">Copiar</button>
-          <label class="text-lightgray" for="Lightgray">Lightgray</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-lightpink" onclick="copiar('#e5b1c2')" id="Lightpink">Copiar</button>
-          <label class="text-lightpink" for="Lightpink">Lightpink</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-magenta" onclick="copiar('#c20952')" id="Magenta">Copiar</button>
-          <label class="text-magenta" for="Magenta">Magenta</label>
-        </div>
-      </div>
-      <div class="row p-4 text-start">
-        <div class="col mb-2">
-          <button class="btn btn-block btn-orange" onclick="copiar('#fd7e14')" id="Orange">Copiar</button>
-          <label class="text-orange" for="Orange">Orange</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-pink" onclick="copiar('#d63384')" id="Pink">Copiar</button>
-          <label class="text-pink" for="Pink">Pink</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-purple" onclick="copiar('#6f42c1')" id="Purple">Copiar</button>
-          <label class="text-purple" for="Purple">Purple</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-teal" onclick="copiar('#20c997')" id="Teal">Copiar</button>
-          <label class="text-teal" for="Teal">Teal</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-yellow" onclick="copiar('#f5b800')" id="Yellow">Copiar</button>
-          <label class="text-yellow" for="Yellow">Yellow</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-primary" onclick="copiar('#0d6efd')" id="Primary">Copiar</button>
-          <label class="text-primary" for="Primary">Primary</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-secondary" onclick="copiar('#6c757d')" id="Secondary">Copiar</button>
-          <label class="text-secondary" for="Secondary">Secondary</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-success" onclick="copiar('#198754')" id="Success">Copiar</button>
-          <label class="text-success" for="Success">Success</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-danger" onclick="copiar('#dc3545')" id="Danger">Copiar</button>
-          <label class="text-danger" for="Danger">Danger</label>
-        </div>
-      </div>
-      <div class="row p-4 text-start">
-        <div class="col mb-2">
-          <button class="btn btn-block btn-warning" onclick="copiar('#ffc107')" id="Warning">Copiar</button>
-          <label class="text-warning" for="Warning">Warning</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-info" onclick="copiar('#0dcaf0')" id="Info">Copiar</button>
-          <label class="text-info" for="Info">Info</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-light" onclick="copiar('#f8f9fa')" id="Light">Copiar </button>
-          <label class="text-light" for="Light">Light</label>
-        </div>
-        <div class="col mb-2">
-          <button class="btn btn-block btn-dark" onclick="copiar('#212529')" id="Dark">Copiar</button>
-          <label class="text-dark" for="Dark">Dark</label>
-        </div>
-      </div>
+      <section class="row p-4 text-center" id="tarjetasDeColores"></section>
     </section>
   </article>
   <article class="card m-4 border-lightgray">
@@ -380,8 +288,63 @@
   </article>
 </body>
 <script>
+  tarjetas()
   function copiar(color){
     navigator.clipboard.writeText(color)
   }
+  function tarjetas(){
+    const tarjetasDeColores = document.querySelector('#tarjetasDeColores')
+    const colores = [
+      {cyan: '#0dcaf0'},
+      {darkblue:'#2b6be1'},
+      {darkgray: '#555555'},
+      {green: '#198754'},
+      {indigo: '#6610f2'},
+      {lemon: '#80eb15'},
+      {lightgray: '#DDDDDD'},
+      {lightpink:'#e5b1c2'},
+      {magenta:'#c20952'},
+      {darkmagenta:'#74366F'},
+      {orange: '#fd7e14'},
+      {pink: '#d63384'},
+      {purple: '#6f42c1'},
+      {teal: '#20c997'},
+      {yellow: '#f5b800'},
+      {primary: '#0d6efd'},
+      {secondary: '#6c757d'},
+      {success: '#198754'},
+      {danger: '#dc3545'},
+      {warning: '#ffc107'},
+      {info: '#0dcaf0'},
+      {light: '#f8f9fa'},
+      {dark: '#212529}'}
+  ]
+  let tarjetas = '<div class="row p-4 text-center">'
+  let contador = 0
+  for(let color of colores){
+    const colorName = String(Object.keys(color))
+    const colorHex = color[colorName].toUpperCase()
+    tarjetas +=  `
+        <div class="col mb-5">
+          <article class="card card-200" style='box-shadow: -1px 27px 45px 24px ${colorHex}3d;'>
+            <section class="card-body bg-${colorName} text-center" >
+              <h5 class="text-white ">${colorName.toUpperCase()}</h5>
+              <h5 class="text-white ">${colorHex}</h5>
+            </section>
+            <section class="card-footer">
+              <button class="btn btn-block btn-${colorName}" id="${colorName}" onclick="copiar('${colorHex}')">Copiar</button>
+            </section>
+          </article>
+        </div>`
+        contador++
+    if(contador % 6 == 0){
+      console.log('contador: ', contador)
+      tarjetas +='</div><div class="row p-4 text-center">'
+    }
+  }
+    tarjetas +='</div>'
+    tarjetasDeColores.innerHTML = tarjetas
+  }
 </script>
 </html>
+

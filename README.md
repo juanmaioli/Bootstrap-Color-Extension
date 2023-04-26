@@ -1,4 +1,5 @@
-# Bootstrap-Color-Extension[demo](https://juanmaioli.github.io/Bootstrap-Color-Extension/)
+# Bootstrap-Color-Extension 
+### [Demo](https://juanmaioli.github.io/Bootstrap-Color-Extension/)
 ***Css de elementos Basicos de Boostrap 4/5 con más colores***
 
 ## Agrega los colores a los elementos:

@@ -1,26 +1,146 @@
-/*Bootstrap Color Extension V1.0.0
+/*Bootstrap Color Extension V1.5.0
 MIT License
-Copyright (c) 2022 Juan Gabriel Maioli
+Copyright (c) 2023 Juan Gabriel Maioli
 */
 
 /* Colors names from https://hue.tools */
 :root {
-  --bs-cyan: #0dcaf0; /*Tropical Turquoise*/
+  --bs-cyan: #41dfff; /*Tropical Turquoise*/
+  --bs-cyan-alt: rgba(13,202,240,0.3); /*Tropical Turquoise*/
   --bs-darkblue:#2b6be1;/*Bluetiful*/
-  --bs-darkgray: #555;/*Heavy Charcoal*/
+  --bs-darkblue-alt:rgba(43,107,225,0.3);/*Bluetiful*/
+  --bs-darkgray: #555555;/*Heavy Charcoal*/
+  --bs-darkgray-alt: rgba(85,85,85,0.3);/*Heavy Charcoal*/
   --bs-green: #198754;/*Primal Green*/
+  --bs-green-alt: rgba(25,135,84,0.3);/*Primal Green*/
   --bs-indigo: #6610f2;/*Space Opera*/
+  --bs-indigo-alt: rgba(102,16,242,0.3);/*Space Opera*/
   --bs-lemon: #80eb15;/*Poisonous Pistachio*/
+  --bs-lemon-alt: rgba(128,235,21,0.3);/*Poisonous Pistachio*/
   --bs-lightgray: #DDDDDD;/*Steam*/
+  --bs-lightgray-alt: rgba(221,221,221,0.3);/*Steam*/
   --bs-lightpink:#e5b1c2;/*Pink Macaroon*/
+  --bs-lightpink-alt:rgba(229,177,194,0.3);/*Pink Macaroon*/
   --bs-magenta:#c20952;/*Love Potion*/
+  --bs-magenta-alt:rgba(194,9,82,0.3);/*Love Potion*/
   --bs-darkmagenta:#74366F;/*Eminence*/
+  --bs-darkmagenta-alt:rgba(116,54,111,0.3);/*Eminence*/
   --bs-orange: #fd7e14;/*Habanero*/
+  --bs-orange-alt: rgba(253,126,20,0.3);/*Habanero*/
   --bs-pink: #d63384;/*Shrine of Pleasures*/
+  --bs-pink-alt: rgba(214,51,132,0.3);/*Shrine of Pleasures*/
   --bs-purple: #6f42c1;/*Purple Rain*/
+  --bs-purple-alt: rgba(111,66,193,0.3);/*Purple Rain*/
   --bs-teal: #20c997;/*Seaweed*/
+  --bs-teal-alt: rgba(32,201,151,0.3);/*Seaweed*/
   --bs-yellow: #f5b800;/*Curry Bubbles*/
+  --bs-yellow-alt: rgba(245,184,0,0.3);/*Curry Bubbles*/
+  --bs-primary-alt: rgba(13,110,253,0.3);/*Original from bootstrap*/
+  --bs-secondary-alt: rgba(108,117,125,0.3);/*Original from bootstrap*/
+  --bs-success-alt: rgba(25,135,84,0.3);/*Original from bootstrap*/
+  --bs-danger-alt: rgba(220,53,69,0.3);/*Original from bootstrap*/
+  --bs-warning-alt: rgba(255,193,7,0.3);/*Original from bootstrap*/
+  --bs-info-alt: rgba(13,202,240,0.3);/*Original from bootstrap*/
+  --bs-light-alt: rgba(248,249,250,0.3);/*Original from bootstrap*/
+  --bs-dark-alt: rgba(33,37,41,0.3);/*Original from bootstrap*/
 }
+
+/* style='box-shadow: -1px 27px 45px 24px ${colorHex}3d;' */
+
+.shadow-cyan-sm{box-shadow: 2px 2px 4px 1px var(--bs-cyan-alt) !important;}
+.shadow-cyan-md{box-shadow: 4px 4px 8px 2px var(--bs-cyan-alt) !important;}
+.shadow-cyan-lg{box-shadow: 6px 6px 12px 3px var(--bs-cyan-alt) !important;}
+.shadow-darkblue-sm{box-shadow: 2px 2px 4px 1px var(--bs-darkblue-alt) !important;}
+.shadow-darkblue-md{box-shadow: 4px 4px 8px 2px var(--bs-darkblue-alt) !important;}
+.shadow-darkblue-lg{box-shadow: 6px 6px 12px 3px var(--bs-darkblue-alt) !important;}
+.shadow-darkgray-sm{box-shadow: 2px 2px 4px 1px var(--bs-darkgray-alt) !important;}
+.shadow-darkgray-md{box-shadow: 4px 4px 8px 2px var(--bs-darkgray-alt) !important;}
+.shadow-darkgray-lg{box-shadow: 6px 6px 12px 3px var(--bs-darkgray-alt) !important;}
+.shadow-green-sm{box-shadow: 2px 2px 4px 1px var(--bs-green-alt) !important;}
+.shadow-green-md{box-shadow: 4px 4px 8px 2px var(--bs-green-alt) !important;}
+.shadow-green-lg{box-shadow: 6px 6px 12px 3px var(--bs-green-alt) !important;}
+.shadow-indigo-sm{box-shadow: 2px 2px 4px 1px var(--bs-indigo-alt) !important;}
+.shadow-indigo-md{box-shadow: 4px 4px 8px 2px var(--bs-indigo-alt) !important;}
+.shadow-indigo-lg{box-shadow: 6px 6px 12px 3px var(--bs-indigo-alt) !important;}
+.shadow-lemon-sm{box-shadow: 2px 2px 4px 1px var(--bs-lemon-alt) !important;}
+.shadow-lemon-md{box-shadow: 4px 4px 8px 2px var(--bs-lemon-alt) !important;}
+.shadow-lemon-lg{box-shadow: 6px 6px 12px 3px var(--bs-lemon-alt) !important;}
+.shadow-lightgray-sm{box-shadow: 2px 2px 4px 1px var(--bs-lightgray-alt) !important;}
+.shadow-lightgray-md{box-shadow: 4px 4px 8px 2px var(--bs-lightgray-alt) !important;}
+.shadow-lightgray-lg{box-shadow: 6px 6px 12px 3px var(--bs-lightgray-alt) !important;}
+.shadow-lightpink-sm{box-shadow: 2px 2px 4px 1px var(--bs-lightpink-alt) !important;}
+.shadow-lightpink-md{box-shadow: 4px 4px 8px 2px var(--bs-lightpink-alt) !important;}
+.shadow-lightpink-lg{box-shadow: 6px 6px 12px 3px var(--bs-lightpink-alt) !important;}
+.shadow-magenta-sm{box-shadow: 2px 2px 4px 1px var(--bs-magenta-alt) !important;}
+.shadow-magenta-md{box-shadow: 4px 4px 8px 2px var(--bs-magenta-alt) !important;}
+.shadow-magenta-lg{box-shadow: 6px 6px 12px 3px var(--bs-magenta-alt) !important;}
+.shadow-darkmagenta-sm{box-shadow: 2px 2px 4px 1px var(--bs-darkmagenta-alt) !important;}
+.shadow-darkmagenta-md{box-shadow: 4px 4px 8px 2px var(--bs-darkmagenta-alt) !important;}
+.shadow-darkmagenta-lg{box-shadow: 6px 6px 12px 3px var(--bs-darkmagenta-alt) !important;}
+.shadow-orange-sm{box-shadow: 2px 2px 4px 1px var(--bs-orange-alt) !important;}
+.shadow-orange-md{box-shadow: 4px 4px 8px 2px var(--bs-orange-alt) !important;}
+.shadow-orange-lg{box-shadow: 6px 6px 12px 3px var(--bs-orange-alt) !important;}
+.shadow-pink-sm{box-shadow: 2px 2px 4px 1px var(--bs-pink-alt) !important;}
+.shadow-pink-md{box-shadow: 4px 4px 8px 2px var(--bs-pink-alt) !important;}
+.shadow-pink-lg{box-shadow: 6px 6px 12px 3px var(--bs-pink-alt) !important;}
+.shadow-purple-sm{box-shadow: 2px 2px 4px 1px var(--bs-purple-alt) !important;}
+.shadow-purple-md{box-shadow: 4px 4px 8px 2px var(--bs-purple-alt) !important;}
+.shadow-purple-lg{box-shadow: 6px 6px 12px 3px var(--bs-purple-alt) !important;}
+.shadow-teal-sm{box-shadow: 2px 2px 4px 1px var(--bs-teal-alt) !important;}
+.shadow-teal-md{box-shadow: 4px 4px 8px 2px var(--bs-teal-alt) !important;}
+.shadow-teal-lg{box-shadow: 6px 6px 12px 3px var(--bs-teal-alt) !important;}
+.shadow-yellow-sm{box-shadow: 2px 2px 4px 1px var(--bs-yellow-alt) !important;}
+.shadow-yellow-md{box-shadow: 4px 4px 8px 2px var(--bs-yellow-alt) !important;}
+.shadow-yellow-lg{box-shadow: 6px 6px 12px 3px var(--bs-teal-alt) !important;}
+.shadow-primary-sm{box-shadow: 2px 2px 4px 1px var(--bs-primary-alt) !important;}
+.shadow-primary-md{box-shadow: 4px 4px 8px 2px var(--bs-primary-alt) !important;}
+.shadow-primary-lg{box-shadow: 6px 6px 12px 3px var(--bs-primary-alt) !important;}
+.shadow-secondary-sm{box-shadow: 2px 2px 4px 1px var(--bs-secondary-alt) !important;}
+.shadow-secondary-md{box-shadow: 4px 4px 8px 2px var(--bs-secondary-alt) !important;}
+.shadow-secondary-lg{box-shadow: 6px 6px 12px 3px var(--bs-secondary-alt) !important;}
+.shadow-success-sm{box-shadow: 2px 2px 4px 1px var(--bs-success-alt) !important;}
+.shadow-success-md{box-shadow: 4px 4px 8px 2px var(--bs-success-alt) !important;}
+.shadow-success-lg{box-shadow: 6px 6px 12px 3px var(--bs-success-alt) !important;}
+.shadow-danger-sm{box-shadow: 2px 2px 4px 1px var(--bs-danger-alt) !important;}
+.shadow-danger-md{box-shadow: 4px 4px 8px 2px var(--bs-danger-alt) !important;}
+.shadow-danger-lg{box-shadow: 6px 6px 12px 3px var(--bs-danger-alt) !important;}
+.shadow-warning-sm{box-shadow: 2px 2px 4px 1px var(--bs-warning-alt) !important;}
+.shadow-warning-md{box-shadow: 4px 4px 8px 2px var(--bs-warning-alt) !important;}
+.shadow-warning-lg{box-shadow: 6px 6px 12px 3px var(--bs-warning-alt) !important;}
+.shadow-info-sm{box-shadow: 2px 2px 4px 1px var(--bs-info-alt) !important;}
+.shadow-info-md{box-shadow: 4px 4px 8px 2px var(--bs-info-alt) !important;}
+.shadow-info-lg{box-shadow: 6px 6px 12px 3px var(--bs-info-alt) !important;}
+.shadow-light-sm{box-shadow: 2px 2px 4px 1px var(--bs-light-alt) !important;}
+.shadow-light-md{box-shadow: 4px 4px 8px 2px var(--bs-light-alt) !important;}
+.shadow-light-lg{box-shadow: 6px 6px 12px 3px var(--bs-light-alt) !important;}
+.shadow-dark-sm{box-shadow: 2px 2px 4px 1px var(--bs-dark-alt) !important;}
+.shadow-dark-md{box-shadow: 4px 4px 8px 2px var(--bs-dark-alt) !important;}
+.shadow-dark-lg{box-shadow: 6px 6px 12px 3px var(--bs-dark-alt) !important;}
+
+
+.shadow-cyan-blur{box-shadow: -1px 20px 40px 14px var(--bs-cyan-alt) !important;}
+.shadow-darkblue-blur{box-shadow: -1px 20px 40px 14px var(--bs-darkblue-alt) !important;}
+.shadow-darkgray-blur{box-shadow: -1px 20px 40px 14px var(--bs-darkgray-alt) !important;}
+.shadow-green-blur{box-shadow: -1px 20px 40px 14px var(--bs-green-alt) !important;}
+.shadow-indigo-blur{box-shadow: -1px 20px 40px 14px var(--bs-indigo-alt) !important;}
+.shadow-lemon-blur{box-shadow: -1px 20px 40px 14px var(--bs-lemon-alt) !important;}
+.shadow-lightgray-blur{box-shadow: -1px 20px 40px 14px var(--bs-lightgray-alt) !important;}
+.shadow-lightpink-blur{box-shadow: -1px 20px 40px 14px var(--bs-lightpink-alt) !important;}
+.shadow-magenta-blur{box-shadow: -1px 20px 40px 14px var(--bs-magenta-alt) !important;}
+.shadow-darkmagenta-blur{box-shadow: -1px 20px 40px 14px var(--bs-darkmagenta-alt) !important;}
+.shadow-orange-blur{box-shadow: -1px 20px 40px 14px var(--bs-orange-alt) !important;}
+.shadow-pink-blur{box-shadow: -1px 20px 40px 14px var(--bs-pink-alt) !important;}
+.shadow-purple-blur{box-shadow: -1px 20px 40px 14px var(--bs-purple-alt) !important;}
+.shadow-teal-blur{box-shadow: -1px 20px 40px 14px var(--bs-teal-alt) !important;}
+.shadow-yellow-blur{box-shadow: -1px 20px 40px 14px var(--bs-yellow-alt) !important;}
+.shadow-primary-blur{box-shadow: -1px 20px 40px 14px var(--bs-primary-alt) !important;}
+.shadow-secondary-blur{box-shadow: -1px 20px 40px 14px var(--bs-secondary-alt) !important;}
+.shadow-success-blur{box-shadow: -1px 20px 40px 14px var(--bs-success-alt) !important;}
+.shadow-danger-blur{box-shadow: -1px 20px 40px 14px var(--bs-danger-alt) !important;}
+.shadow-warning-blur{box-shadow: -1px 20px 40px 14px var(--bs-warning-alt) !important;}
+.shadow-info-blur{box-shadow: -1px 20px 40px 14px var(--bs-info-alt) !important;}
+.shadow-light-blur{box-shadow: -1px 20px 40px 14px var(--bs-light-alt) !important;}
+.shadow-dark-blur{box-shadow: -1px 20px 40px 14px var(--bs-dark-alt) !important;}
 
 .text-cyan {color: var(--bs-cyan) !important;}
 .text-darkblue {color: var(--bs-darkblue) !important;}
@@ -30,6 +150,7 @@ Copyright (c) 2022 Juan Gabriel Maioli
 .text-lemon {color: var(--bs-lemon) !important;}
 .text-lightgray {color: var(--bs-lightgray) !important;}
 .text-magenta {color: var(--bs-magenta) !important;}
+.text-darkmagenta {color: var(--bs-darkmagenta) !important;}
 .text-orange {color: var(--bs-orange) !important;}
 .text-pink {color: var(--bs-pink) !important;}
 .text-lightpink {color: var(--bs-lightpink) !important;}
@@ -46,6 +167,7 @@ Copyright (c) 2022 Juan Gabriel Maioli
 .bg-lightgray {background-color: var(--bs-lightgray) !important;}
 .bg-lightpink {background-color: var(--bs-lightpink) !important;}
 .bg-magenta {background-color: var(--bs-magenta) !important;}
+.bg-darkmagenta {background-color: var(--bs-darkmagenta) !important;}
 .bg-orange {background-color: var(--bs-orange) !important;}
 .bg-pink {background-color: var(--bs-pink) !important;}
 .bg-purple {background-color: var(--bs-purple) !important;}
@@ -61,6 +183,7 @@ Copyright (c) 2022 Juan Gabriel Maioli
 .border-lightgray {border-color: var(--bs-lightgray) !important;}
 .border-lightpink {border-color: var(--bs-lightpink) !important;}
 .border-magenta {border-color: var(--bs-magenta) !important;}
+.border-darkmagenta {border-color: var(--bs-darkmagenta) !important;}
 .border-orange {border-color: var(--bs-orange) !important;}
 .border-pink {border-color: var(--bs-pink) !important;}
 .border-purple {border-color: var(--bs-purple) !important;}
@@ -77,6 +200,7 @@ Copyright (c) 2022 Juan Gabriel Maioli
 .hr-lightgray {border-top: 1px solid var(--bs-lightgray) !important;}
 .hr-lightpink {border-top: 1px solid var(--bs-lightpink) !important;}
 .hr-magenta {border-top: 1px solid var(--bs-magenta) !important;}
+.hr-darkmagenta {border-top: 1px solid var(--bs-darkmagenta) !important;}
 .hr-orange {border-top: 1px solid var(--bs-orange) !important;}
 .hr-pink {border-top: 1px solid var(--bs-pink) !important;}
 .hr-purple {border-top: 1px solid var(--bs-purple) !important;}
@@ -110,6 +234,9 @@ Copyright (c) 2022 Juan Gabriel Maioli
 .btn-magenta {color:#fff; background-color: var(--bs-magenta) ;border-color: var(--bs-magenta) ;}
 .btn-magenta:focus {background-color: #91073d;border-color: var(--bs-magenta) ;box-shadow: 0 0 0 0.25rem rgba(194, 9, 82, 0.5);}
 .btn-magenta:hover {color:#fff; background-color: #91073d;border-color: var(--bs-magenta) ;}
+.btn-darkmagenta {color:#fff; background-color: var(--bs-darkmagenta) ;border-color: var(--bs-darkmagenta) ;}
+.btn-darkmagenta:focus {background-color: #91073d;border-color: var(--bs-darkmagenta) ;box-shadow: 0 0 0 0.25rem rgba(194, 9, 82, 0.5);}
+.btn-darkmagenta:hover {color:#fff; background-color: #91073d;border-color: var(--bs-darkmagenta) ;}
 .btn-orange {color:#fff; background-color: var(--bs-orange) ;border-color: var(--bs-orange) ;}
 .btn-orange:focus {background-color: #dc6502 ;border-color: var(--bs-orange) ;box-shadow: 0 0 0 0.25rem rgba(245, 184, 0, 0.5);}
 .btn-orange:hover {color:#fff; background-color: #dc6502 ;border-color: var(--bs-orange) ;}
@@ -153,6 +280,9 @@ Copyright (c) 2022 Juan Gabriel Maioli
 .btn-outline-magenta {color:var(--bs-magenta) ;border-color: var(--bs-magenta) ;}
 .btn-outline-magenta:focus {background-color: #91073d;border-color: var(--bs-magenta) ;box-shadow: 0 0 0 0.25rem rgba(194, 9, 82, 0.5);}
 .btn-outline-magenta:hover {color:#fff; background-color: #91073d;border-color: var(--bs-magenta) ;}
+.btn-outline-darkmagenta {color:var(--bs-darkmagenta) ;border-color: var(--bs-darkmagenta) ;}
+.btn-outline-darkmagenta:focus {background-color: #91073d;border-color: var(--bs-darkmagenta) ;box-shadow: 0 0 0 0.25rem rgba(194, 9, 82, 0.5);}
+.btn-outline-darkmagenta:hover {color:#fff; background-color: #91073d;border-color: var(--bs-darkmagenta) ;}
 .btn-outline-orange {color:var(--bs-orange) ;border-color: var(--bs-orange) ;}
 .btn-outline-orange:focus {background-color: #dc6502 ;border-color: var(--bs-orange) ;box-shadow: 0 0 0 0.25rem rgba(245, 184, 0, 0.5);}
 .btn-outline-orange:hover {color:#fff; background-color: #dc6502 ;border-color: var(--bs-orange) ;}
@@ -177,6 +307,7 @@ Copyright (c) 2022 Juan Gabriel Maioli
 .alert-lemon {color: var(--bs-lemon) ;border-color: #ddfac1; background-color: #eefce0}
 .alert-lightgray {color: #bbb ;border-color: var(--bs-lightgray) ; background-color: #eee}
 .alert-magenta {color: var(--bs-magenta) ;border-color: #fbadcc; background-color: #fdddea}
+.alert-darkmagenta {color: var(--bs-darkmagenta) ;border-color: #ff72aa; background-color: #ff7db1}
 .alert-orange {color: var(--bs-orange) ;border-color: #fed1ac; background-color: #ffedde}
 .alert-pink {color: var(--bs-pink) ;border-color: #f2c0d9; background-color: #f8ddea}
 .alert-lightpink {color: var(--bs-lightpink) ;border-color: #dd98ae; background-color: #faf1f4}

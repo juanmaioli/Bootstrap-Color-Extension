@@ -28,89 +28,62 @@
     <link  rel="stylesheet" href="css/bootstrap.min.css?version=5.2.3">
     <script src="js/bootstrap.bundle.min.js?version=5.2.3"></script>
       <!-- Bootstrap Color Extension -->
-    <link rel="stylesheet" href="style.css?version=1.0.0" >
+    <link rel="stylesheet" href="bootstrap-color-extension.css?version=1.5.0" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&family=Roboto&display=swap');
-      .card{box-shadow: 0 4px 8px 0 rgba(185, 134, 134, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);}
-      .card-200{height: 200px;width: 180px;}
+      /* .card{box-shadow: 0 4px 8px 0 rgba(185, 134, 134, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);} */
+      .card-200{max-height: 200px;max-width: 180px;}
+      .card-100{min-height: 100px;max-width: 180px;display: flex;justify-content: center;align-items: center;}
       body{font-family: 'Lato', sans-serif;background-color: #F6F6F6;}
-      h2{font-family: 'Montserrat', sans-serif;}
+      h1,h2,h3,h4,h5,h6{font-family: 'Montserrat', sans-serif;}
+
     </style>
   </head>
 <body>
 <div class="container-fluid">
-  <article class="card m-4 border-lightgray">
+
+  <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Colores</h2></section>
     <section class="card-body">
-      <section class="row p-4 text-center" id="tarjetasDeColores"></section>
+      <section id="tarjetasDeColores"></section>
     </section>
   </article>
-  <article class="card m-4 border-lightgray">
+  <article class="card m-4 shadow-dark-lg">
+    <section class="card-header"><h2 class="text-darkgray">Sombras</h2></section>
+    <section class="card-body">
+      <article class="card mb-3">
+        <section class="card-header"><h4 class="text-darkgray">Sombras Sd</h4></section>
+        <section class="card-body"><section id="sombrasDeColoresSm"></section></section>
+      </article>
+      <article class="card mb-3">
+        <section class="card-header"><h4 class="text-darkgray">Sombras Md</h4></section>
+        <section class="card-body"><section id="sombrasDeColoresMd"></section></section>
+      </article>
+      <article class="card mb-3">
+        <section class="card-header"><h4 class="text-darkgray">Sombras Lg</h4></section>
+        <section class="card-body"><section id="sombrasDeColoresLg"></section></section>
+      </article>
+      <article class="card mb-3">
+        <section class="card-header"><h4 class="text-darkgray">Sombras Blur</h4></section>
+        <section class="card-body"><section id="sombrasDeColoresBlur"></section></section>
+      </article>
+  </article>
+  <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Botones</h2></section>
     <section class="card-body">
-      <div class="row p-4 text-center">
-        <div class="col mb-2"><button class="btn btn-block btn-cyan">btn-cyan</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-darkblue">btn-darkblue</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-darkgray">btn-darkgray</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-green">btn-green</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-indigo">btn-indigo</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-lemon">btn-lemon</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-lightgray">btn-lightgray</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-lightpink">btn-lightpink</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-magenta">btn-magenta</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-orange">btn-orange</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-pink">btn-pink</button></div>
-      </div>
-      <div class="row p-4 text-center">
-        <div class="col mb-2"><button class="btn btn-block btn-purple">btn-purple</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-teal">btn-teal</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-yellow">btn-yellow</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-primary">btn-primary</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-secondary">btn-secondary</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-success">btn-success</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-danger">btn-danger</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-warning">btn-warning</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-info">btn-info</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-light">btn-light</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-dark">btn-dark</button></div>
-      </div>
+      <section id="botonesDeColores"></section>
     </section>
   </article>
-  <article class="card m-4">
+  <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Botones Outline</h2></section>
     <section class="card-body p-4">
-      <div class="row p-4 text-center">
-        <div class="col mb-2"><button class="btn btn-block btn-outline-cyan">btn-outline-cyan</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-darkblue">btn-outline-darkblue</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-darkgray">btn-outline-darkgray</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-green">btn-outline-green</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-indigo">btn-outline-indigo</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-lemon">btn-outline-lemon</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-lightgray">btn-outline-lightgray</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-lightpink">btn-outline-lightpink</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-magenta">btn-outline-magenta</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-orange">btn-outline-orange</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-pink">btn-outline-pink</button></div>
-      </div>
-      <div class="row p-4 text-center">
-        <div class="col mb-2"><button class="btn btn-block btn-outline-purple">btn-outline-purple</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-teal">btn-outline-teal</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-yellow">btn-outline-yellow</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-primary">btn-outline-primary</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-secondary">btn-outline-secondary</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-success">btn-outline-success</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-danger">btn-outline-danger</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-warning">btn-outline-warning</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-info">btn-outline-info</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-light">btn-outline-light</button></div>
-        <div class="col mb-2"><button class="btn btn-block btn-outline-dark">btn-outline-dark</button></div>
-      </div>
+      <section id="botonesOutlineDeColores"></section>
     </section>
   </article>
 
-  <article class="card m-4">
+  <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Color de Texto</h2></section>
     <section class="card-body p-4">
       <div class="row p-4 text-center">
@@ -121,7 +94,7 @@
         <div class="col m-1 text-center text-indigo">text-indigo</div>
         <div class="col m-1 text-center text-lemon">text-lemon</div>
         <div class="col m-1 text-center text-lightgray">text-lightgray</div>
-        <div class="col m-1 text-center text-magenta">text-magenta</div>
+        <div class="col m-1 text-center text-darkmagenta">text-darkmagenta</div>
         <div class="col m-1 text-center text-orange">text-orange</div>
         <div class="col m-1 text-center text-pink">text-pink</div>
         <div class="col m-1 text-center text-lightpink">text-lightpink</div>
@@ -141,7 +114,7 @@
       </div>
     </section>
   </article>
-  <article class="card m-4">
+  <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Fondos con Textos en negro</h2></section>
     <section class="card-body p-4">
       <div class="row p-4 text-center">
@@ -153,11 +126,12 @@
         <div class="col m-1 p-1 text-center bg-lemon">bg-lemon</div>
         <div class="col m-1 p-1 text-center bg-lightgray">bg-lightgray</div>
         <div class="col m-1 p-1 text-center bg-magenta">bg-magenta</div>
+        <div class="col m-1 p-1 text-center bg-darkmagenta">bg-darkmagenta</div>
         <div class="col m-1 p-1 text-center bg-orange">bg-orange</div>
         <div class="col m-1 p-1 text-center bg-pink">bg-pink</div>
         <div class="col m-1 p-1 text-center bg-lightpink">bg-lightpink</div>
       </div>
-      <div class="row p-4 text-center">
+      <div class="row p-4 text-center shadow-dark-lg">
         <div class="col m-1 p-1 text-center bg-purple">bg-purple</div>
         <div class="col m-1 p-1 text-center bg-teal">bg-teal</div>
         <div class="col m-1 p-1 text-center bg-yellow">bg-yellow</div>
@@ -172,7 +146,7 @@
       </div>
     </section>
   </article>
-  <article class="card m-4">
+  <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Fondos con Textos en blanco</h2></section>
     <section class="card-body p-4">
       <div class="row p-4 text-center">
@@ -184,6 +158,7 @@
         <div class="col m-1 p-1 text-white text-center bg-lemon">bg-lemon</div>
         <div class="col m-1 p-1 text-white text-center bg-lightgray">bg-lightgray</div>
         <div class="col m-1 p-1 text-white text-center bg-magenta">bg-magenta</div>
+        <div class="col m-1 p-1 text-white text-center bg-darkmagenta">bg-magenta</div>
         <div class="col m-1 p-1 text-white text-center bg-orange">bg-orange</div>
         <div class="col m-1 p-1 text-white text-center bg-pink">bg-pink</div>
         <div class="col m-1 p-1 text-white text-center bg-lightpink">bg-lightpink</div>
@@ -198,12 +173,12 @@
         <div class="col m-1 p-1 text-white text-center bg-danger">bg-danger</div>
         <div class="col m-1 p-1 text-white text-center bg-warning">bg-warning</div>
         <div class="col m-1 p-1 text-white text-center bg-info">bg-info</div>
-        <div class="col m-1 p-1 text-center text-dark bg-light">bg-light</div>
+        <div class="col m-1 p-1 text-white text-center bg-light">bg-light</div>
         <div class="col m-1 p-1 text-white text-center bg-dark">bg-dark</div>
       </div>
     </section>
   </article>
-  <article class="card m-4">
+  <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Bordes</h2></section>
     <section class="card-body p-4">
       <div class="row p-4 text-center">
@@ -215,6 +190,7 @@
         <div class="col m-1 p-1 text-center border border-lemon">border-lemon</div>
         <div class="col m-1 p-1 text-center border border-lightgray">border-lightgray</div>
         <div class="col m-1 p-1 text-center border border-magenta">border-magenta</div>
+        <div class="col m-1 p-1 text-center border border-darkmagenta">border-magenta</div>
         <div class="col m-1 p-1 text-center border border-orange">border-orange</div>
         <div class="col m-1 p-1 text-center border border-pink">border-pink</div>
         <div class="col m-1 p-1 text-center border border-lightpink">border-lightpink</div>
@@ -234,7 +210,7 @@
       </div>
     </section>
   </article>
-  <article class="card m-4">
+  <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Alertas</h2></section>
     <section class="card-body p-4">
       <div class="row p-4 text-center">
@@ -246,6 +222,7 @@
         <div class="col m-1 p-1 text-center alert alert-lemon">alert-lemon</div>
         <div class="col m-1 p-1 text-center alert alert-lightgray">alert-lightgray</div>
         <div class="col m-1 p-1 text-center alert alert-magenta">alert-magenta</div>
+        <div class="col m-1 p-1 text-center alert alert-darkmagenta">alert-magenta</div>
         <div class="col m-1 p-1 text-center alert alert-orange">alert-orange</div>
         <div class="col m-1 p-1 text-center alert alert-pink">alert-pink</div>
         <div class="col m-1 p-1 text-center alert alert-lightpink">alert-lightpink</div>
@@ -265,7 +242,7 @@
       </div>
     </section>
   </article>
-  <article class="card m-4">
+  <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Linea HR</h2></section>
     <section class="card-body p-4">
       <div class="row p-4 text-center">
@@ -277,6 +254,9 @@
         <div class="col mb-2 text-center"><hr class="hr-lemon">hr-lemon</div>
         <div class="col mb-2 text-center"><hr class="hr-lightgray">hr-lightgray</div>
         <div class="col mb-2 text-center"><hr class="hr-magenta">hr-magenta</div>
+      </div>
+      <div class="row p-4 text-center">
+        <div class="col mb-2 text-center"><hr class="hr-darkmagenta">hr-darkmagenta</div>
         <div class="col mb-2 text-center"><hr class="hr-orange">hr-orange</div>
         <div class="col mb-2 text-center"><hr class="hr-pink">hr-pink</div>
         <div class="col mb-2 text-center"><hr class="hr-lightpink">hr-lightpink</div>
@@ -287,64 +267,6 @@
     </section>
   </article>
 </body>
-<script>
-  tarjetas()
-  function copiar(color){
-    navigator.clipboard.writeText(color)
-  }
-  function tarjetas(){
-    const tarjetasDeColores = document.querySelector('#tarjetasDeColores')
-    const colores = [
-      {cyan: '#0dcaf0'},
-      {darkblue:'#2b6be1'},
-      {darkgray: '#555555'},
-      {green: '#198754'},
-      {indigo: '#6610f2'},
-      {lemon: '#80eb15'},
-      {lightgray: '#DDDDDD'},
-      {lightpink:'#e5b1c2'},
-      {magenta:'#c20952'},
-      {darkmagenta:'#74366F'},
-      {orange: '#fd7e14'},
-      {pink: '#d63384'},
-      {purple: '#6f42c1'},
-      {teal: '#20c997'},
-      {yellow: '#f5b800'},
-      {primary: '#0d6efd'},
-      {secondary: '#6c757d'},
-      {success: '#198754'},
-      {danger: '#dc3545'},
-      {warning: '#ffc107'},
-      {info: '#0dcaf0'},
-      {light: '#f8f9fa'},
-      {dark: '#212529}'}
-  ]
-  let tarjetas = '<div class="row p-4 text-center">'
-  let contador = 0
-  for(let color of colores){
-    const colorName = String(Object.keys(color))
-    const colorHex = color[colorName].toUpperCase()
-    tarjetas +=  `
-        <div class="col mb-5">
-          <article class="card card-200" style='box-shadow: -1px 27px 45px 24px ${colorHex}3d;'>
-            <section class="card-body bg-${colorName} text-center" >
-              <h5 class="text-white ">${colorName.toUpperCase()}</h5>
-              <h5 class="text-white ">${colorHex}</h5>
-            </section>
-            <section class="card-footer">
-              <button class="btn btn-block btn-${colorName}" id="${colorName}" onclick="copiar('${colorHex}')">Copiar</button>
-            </section>
-          </article>
-        </div>`
-        contador++
-    if(contador % 6 == 0){
-      console.log('contador: ', contador)
-      tarjetas +='</div><div class="row p-4 text-center">'
-    }
-  }
-    tarjetas +='</div>'
-    tarjetasDeColores.innerHTML = tarjetas
-  }
-</script>
+<script src="index.js"></script>
 </html>
 

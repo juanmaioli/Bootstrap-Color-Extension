@@ -1,5 +1,5 @@
-# Bootstrap-Color-Extension
-***Css de elementos Basicos de Boostrap 4/5 con nuevos colores***
+# Bootstrap-Color-Extension[demo](https://juanmaioli.github.io/Bootstrap-Color-Extension/)
+***Css de elementos Basicos de Boostrap 4/5 con más colores***
 
 ## Agrega los colores a los elementos:
 - Sombras en tamaños sd,md,lg y con efecto blur(shadows)

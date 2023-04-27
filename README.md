@@ -17,7 +17,7 @@
 - **--bs-cyan**: Tropical Turquoise [(#0dcaf0)](https://hue.tools/info?color=0dcaf0)
 - **--bs-darkblue**: Bluetiful [(#2b6be1)](https://hue.tools/info?color=2b6be1)
 - **--bs-darkgray**: Heavy Charcoal [(#555555)](https://hue.tools/info?color=555555)
-- **--bs-green**: Primal Green [(#198754)](https://hue.tools/info?color=198754)
+- **--bs-green**: Hanging Gardens of Babylon [(#199b37)](https://hue.tools/info?color=199b37)
 - **--bs-indigo**: Space Opera [(#6610f2)](https://hue.tools/info?color=6610f2)
 - **--bs-lemon**: Poisonous Pistachio [(#80eb15)](https://hue.tools/info?color=80eb15)
 - **--bs-lightgray**: Steam[ (#DDDDDD)](https://hue.tools/info?color=DDDDDD)

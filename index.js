@@ -14,7 +14,7 @@ function tarjetas(){
     {cyan: '#41dfff'},
     {darkblue:'#2b6be1'},
     {darkgray: '#555555'},
-    {green: '#198754'},
+    {green: '#199b37'},
     {indigo: '#6610f2'},
     {lemon: '#80eb15'},
     {lightgray: '#DDDDDD'},

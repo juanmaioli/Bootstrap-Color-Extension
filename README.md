@@ -29,3 +29,4 @@
 - **--bs-purple**: Purple Rain [(#6f42c1)](https://hue.tools/info?color=6f42c1)
 - **--bs-teal**: Seaweed [(#20c997)](https://hue.tools/info?color=20c997)
 - **--bs-yellow**: Curry Bubbles [(#f5b800)](https://hue.tools/info?color=f5b800)
+- **--bs-night**: Oblivion [(#00007e)](https://hue.tools/info?color=00007e)

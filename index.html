@@ -28,7 +28,7 @@
     <link  rel="stylesheet" href="css/bootstrap.min.css?version=5.2.3">
     <script src="js/bootstrap.bundle.min.js?version=5.2.3"></script>
       <!-- Bootstrap Color Extension -->
-    <link rel="stylesheet" href="bootstrap-color-extension.css?version=1.5.0" >
+    <link rel="stylesheet" href="bootstrap-color-extension.css?version=1.6.0" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
     <style>
@@ -46,8 +46,7 @@
 
   <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Colores</h2></section>
-    <section class="card-body">
-      <section id="tarjetasDeColores"></section>
+    <section class="card-body" id="tarjetasDeColores">
     </section>
   </article>
   <article class="card m-4 shadow-dark-lg">
@@ -55,216 +54,53 @@
     <section class="card-body">
       <article class="card mb-3">
         <section class="card-header"><h4 class="text-darkgray">Sombras Sd</h4></section>
-        <section class="card-body"><section id="sombrasDeColoresSm"></section></section>
+        <section class="card-body" id="sombrasDeColoresSm"></section>
       </article>
       <article class="card mb-3">
         <section class="card-header"><h4 class="text-darkgray">Sombras Md</h4></section>
-        <section class="card-body"><section id="sombrasDeColoresMd"></section></section>
+        <section class="card-body" id="sombrasDeColoresMd"></section>
       </article>
       <article class="card mb-3">
         <section class="card-header"><h4 class="text-darkgray">Sombras Lg</h4></section>
-        <section class="card-body"><section id="sombrasDeColoresLg"></section></section>
+        <section class="card-body" id="sombrasDeColoresLg"></section>
       </article>
       <article class="card mb-3">
         <section class="card-header"><h4 class="text-darkgray">Sombras Blur</h4></section>
-        <section class="card-body"><section id="sombrasDeColoresBlur"></section></section>
+        <section class="card-body" id="sombrasDeColoresBlur"></section>
       </article>
   </article>
   <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Botones</h2></section>
-    <section class="card-body">
-      <section id="botonesDeColores"></section>
-    </section>
+    <section class="card-body" id="botonesDeColores"></section>
   </article>
   <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Botones Outline</h2></section>
-    <section class="card-body p-4">
-      <section id="botonesOutlineDeColores"></section>
-    </section>
+    <section class="card-body p-4" id="botonesOutlineDeColores"></section>
   </article>
 
   <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Color de Texto</h2></section>
-    <section class="card-body p-4">
-      <div class="row p-4 text-center">
-        <div class="col m-1 text-center text-cyan">text-cyan</div>
-        <div class="col m-1 text-center text-darkblue">text-darkblue</div>
-        <div class="col m-1 text-center text-darkgray">text-darkgray</div>
-        <div class="col m-1 text-center text-green">text-green</div>
-        <div class="col m-1 text-center text-indigo">text-indigo</div>
-        <div class="col m-1 text-center text-lemon">text-lemon</div>
-        <div class="col m-1 text-center text-lightgray">text-lightgray</div>
-        <div class="col m-1 text-center text-darkmagenta">text-darkmagenta</div>
-        <div class="col m-1 text-center text-orange">text-orange</div>
-        <div class="col m-1 text-center text-pink">text-pink</div>
-        <div class="col m-1 text-center text-lightpink">text-lightpink</div>
-      </div>
-      <div class="row p-4 text-center">
-        <div class="col m-1 text-center text-center text-purple">text-purple</div>
-        <div class="col m-1 text-center text-center text-teal">text-teal</div>
-        <div class="col m-1 text-center text-center text-yellow">text-yellow</div>
-        <div class="col m-1 text-center text-primary">text-primary</div>
-        <div class="col m-1 text-center text-secondary">text-secondary</div>
-        <div class="col m-1 text-center text-success">text-success</div>
-        <div class="col m-1 text-center text-danger">text-danger</div>
-        <div class="col m-1 text-center text-warning">text-warning</div>
-        <div class="col m-1 text-center text-info">text-info</div>
-        <div class="col m-1 text-center text-light bg-dark">text-light</div>
-        <div class="col m-1 text-center text-dark">text-dark</div>
-      </div>
-    </section>
+    <section class="card-body p-4" id="textoDeColores"></section>
   </article>
   <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Fondos con Textos en negro</h2></section>
-    <section class="card-body p-4">
-      <div class="row p-4 text-center">
-        <div class="col m-1 p-1 text-center bg-cyan">bg-cyan</div>
-        <div class="col m-1 p-1 text-center bg-darkblue">bg-darkblue</div>
-        <div class="col m-1 p-1 text-center bg-darkgray">bg-darkgray</div>
-        <div class="col m-1 p-1 text-center bg-green">bg-green</div>
-        <div class="col m-1 p-1 text-center bg-indigo">bg-indigo</div>
-        <div class="col m-1 p-1 text-center bg-lemon">bg-lemon</div>
-        <div class="col m-1 p-1 text-center bg-lightgray">bg-lightgray</div>
-        <div class="col m-1 p-1 text-center bg-magenta">bg-magenta</div>
-        <div class="col m-1 p-1 text-center bg-darkmagenta">bg-darkmagenta</div>
-        <div class="col m-1 p-1 text-center bg-orange">bg-orange</div>
-        <div class="col m-1 p-1 text-center bg-pink">bg-pink</div>
-        <div class="col m-1 p-1 text-center bg-lightpink">bg-lightpink</div>
-      </div>
-      <div class="row p-4 text-center shadow-dark-lg">
-        <div class="col m-1 p-1 text-center bg-purple">bg-purple</div>
-        <div class="col m-1 p-1 text-center bg-teal">bg-teal</div>
-        <div class="col m-1 p-1 text-center bg-yellow">bg-yellow</div>
-        <div class="col m-1 p-1 text-center bg-primary">bg-primary</div>
-        <div class="col m-1 p-1 text-center bg-secondary">bg-secondary</div>
-        <div class="col m-1 p-1 text-center bg-success">bg-success</div>
-        <div class="col m-1 p-1 text-center bg-danger">bg-danger</div>
-        <div class="col m-1 p-1 text-center bg-warning">bg-warning</div>
-        <div class="col m-1 p-1 text-center bg-info">bg-info</div>
-        <div class="col m-1 p-1 text-center bg-light">bg-light</div>
-        <div class="col m-1 p-1 text-center bg-dark">bg-dark</div>
-      </div>
-    </section>
+    <section class="card-body p-4" id="fondosTextosNegros"></section>
   </article>
   <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Fondos con Textos en blanco</h2></section>
-    <section class="card-body p-4">
-      <div class="row p-4 text-center">
-        <div class="col m-1 p-1 text-white text-center bg-cyan">bg-cyan</div>
-        <div class="col m-1 p-1 text-white text-center bg-darkblue">bg-darkblue</div>
-        <div class="col m-1 p-1 text-white text-center bg-darkgray">bg-darkgray</div>
-        <div class="col m-1 p-1 text-white text-center bg-green">bg-green</div>
-        <div class="col m-1 p-1 text-white text-center bg-indigo">bg-indigo</div>
-        <div class="col m-1 p-1 text-white text-center bg-lemon">bg-lemon</div>
-        <div class="col m-1 p-1 text-white text-center bg-lightgray">bg-lightgray</div>
-        <div class="col m-1 p-1 text-white text-center bg-magenta">bg-magenta</div>
-        <div class="col m-1 p-1 text-white text-center bg-darkmagenta">bg-magenta</div>
-        <div class="col m-1 p-1 text-white text-center bg-orange">bg-orange</div>
-        <div class="col m-1 p-1 text-white text-center bg-pink">bg-pink</div>
-        <div class="col m-1 p-1 text-white text-center bg-lightpink">bg-lightpink</div>
-      </div>
-      <div class="row p-4 text-center">
-        <div class="col m-1 p-1 text-white text-center bg-purple">bg-purple</div>
-        <div class="col m-1 p-1 text-white text-center bg-teal">bg-teal</div>
-        <div class="col m-1 p-1 text-white text-center bg-yellow">bg-yellow</div>
-        <div class="col m-1 p-1 text-white text-center bg-primary">bg-primary</div>
-        <div class="col m-1 p-1 text-white text-center bg-secondary">bg-secondary</div>
-        <div class="col m-1 p-1 text-white text-center bg-success">bg-success</div>
-        <div class="col m-1 p-1 text-white text-center bg-danger">bg-danger</div>
-        <div class="col m-1 p-1 text-white text-center bg-warning">bg-warning</div>
-        <div class="col m-1 p-1 text-white text-center bg-info">bg-info</div>
-        <div class="col m-1 p-1 text-white text-center bg-light">bg-light</div>
-        <div class="col m-1 p-1 text-white text-center bg-dark">bg-dark</div>
-      </div>
-    </section>
+    <section class="card-body p-4" id="fondosTextosBlancos"></section>
   </article>
   <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Bordes</h2></section>
-    <section class="card-body p-4">
-      <div class="row p-4 text-center">
-        <div class="col m-1 p-1 text-center border border-cyan">border-cyan</div>
-        <div class="col m-1 p-1 text-center border border-darkblue">border-darkblue</div>
-        <div class="col m-1 p-1 text-center border border-darkgray">border-darkgray</div>
-        <div class="col m-1 p-1 text-center border border-green">border-green</div>
-        <div class="col m-1 p-1 text-center border border-indigo">border-indigo</div>
-        <div class="col m-1 p-1 text-center border border-lemon">border-lemon</div>
-        <div class="col m-1 p-1 text-center border border-lightgray">border-lightgray</div>
-        <div class="col m-1 p-1 text-center border border-magenta">border-magenta</div>
-        <div class="col m-1 p-1 text-center border border-darkmagenta">border-magenta</div>
-        <div class="col m-1 p-1 text-center border border-orange">border-orange</div>
-        <div class="col m-1 p-1 text-center border border-pink">border-pink</div>
-        <div class="col m-1 p-1 text-center border border-lightpink">border-lightpink</div>
-      </div>
-      <div class="row p-4 text-center">
-        <div class="col m-1 p-1 text-center border border-purple">border-purple</div>
-        <div class="col m-1 p-1 text-center border border-teal">border-teal</div>
-        <div class="col m-1 p-1 text-center border border-yellow">border-yellow</div>
-        <div class="col m-1 p-1 text-center border border-primary">border-primary</div>
-        <div class="col m-1 p-1 text-center border border-secondary">border-secondary</div>
-        <div class="col m-1 p-1 text-center border border-success">border-success</div>
-        <div class="col m-1 p-1 text-center border border-danger">border-danger</div>
-        <div class="col m-1 p-1 text-center border border-warning">border-warning</div>
-        <div class="col m-1 p-1 text-center border border-info">border-info</div>
-        <div class="col m-1 p-1 text-center border border-light">border-light</div>
-        <div class="col m-1 p-1 text-center border border-dark">border-dark</div>
-      </div>
-    </section>
+    <section class="card-body p-4" id="bordesSection"></section>
   </article>
   <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Alertas</h2></section>
-    <section class="card-body p-4">
-      <div class="row p-4 text-center">
-        <div class="col m-1 p-1 text-center alert alert-cyan">alert-cyan</div>
-        <div class="col m-1 p-1 text-center alert alert-darkblue">alert-darkblue</div>
-        <div class="col m-1 p-1 text-center alert alert-darkgray">alert-darkgray</div>
-        <div class="col m-1 p-1 text-center alert alert-green">alert-green</div>
-        <div class="col m-1 p-1 text-center alert alert-indigo">alert-indigo</div>
-        <div class="col m-1 p-1 text-center alert alert-lemon">alert-lemon</div>
-        <div class="col m-1 p-1 text-center alert alert-lightgray">alert-lightgray</div>
-        <div class="col m-1 p-1 text-center alert alert-magenta">alert-magenta</div>
-        <div class="col m-1 p-1 text-center alert alert-darkmagenta">alert-magenta</div>
-        <div class="col m-1 p-1 text-center alert alert-orange">alert-orange</div>
-        <div class="col m-1 p-1 text-center alert alert-pink">alert-pink</div>
-        <div class="col m-1 p-1 text-center alert alert-lightpink">alert-lightpink</div>
-      </div>
-      <div class="row p-4 text-center">
-        <div class="col m-1 p-1 text-center alert alert-purple">alert-purple</div>
-        <div class="col m-1 p-1 text-center alert alert-teal">alert-teal</div>
-        <div class="col m-1 p-1 text-center alert alert-yellow">alert-yellow</div>
-        <div class="col m-1 p-1 text-center alert alert-primary">alert-primary</div>
-        <div class="col m-1 p-1 text-center alert alert-secondary">alert-secondary</div>
-        <div class="col m-1 p-1 text-center alert alert-success">alert-success</div>
-        <div class="col m-1 p-1 text-center alert alert-primary">alert-primary</div>
-        <div class="col m-1 p-1 text-center alert alert-warning">alert-warning</div>
-        <div class="col m-1 p-1 text-center alert alert-info">alert-info</div>
-        <div class="col m-1 p-1 text-center alert alert-light">alert-light</div>
-        <div class="col m-1 p-1 text-center alert alert-dark">alert-dark</div>
-      </div>
-    </section>
+    <section class="card-body p-4" id="alertasSection"></section>
   </article>
   <article class="card m-4 shadow-dark-lg">
     <section class="card-header"><h2 class="text-darkgray">Linea HR</h2></section>
-    <section class="card-body p-4">
-      <div class="row p-4 text-center">
-        <div class="col mb-2 text-center"><hr class="hr-cyan">hr-cyan</div>
-        <div class="col mb-2 text-center"><hr class="hr-darkblue">hr-darkblue</div>
-        <div class="col mb-2 text-center"><hr class="hr-darkgray">hr-darkgray</div>
-        <div class="col mb-2 text-center"><hr class="hr-green">hr-green</div>
-        <div class="col mb-2 text-center"><hr class="hr-indigo">hr-indigo</div>
-        <div class="col mb-2 text-center"><hr class="hr-lemon">hr-lemon</div>
-        <div class="col mb-2 text-center"><hr class="hr-lightgray">hr-lightgray</div>
-        <div class="col mb-2 text-center"><hr class="hr-magenta">hr-magenta</div>
-      </div>
-      <div class="row p-4 text-center">
-        <div class="col mb-2 text-center"><hr class="hr-darkmagenta">hr-darkmagenta</div>
-        <div class="col mb-2 text-center"><hr class="hr-orange">hr-orange</div>
-        <div class="col mb-2 text-center"><hr class="hr-pink">hr-pink</div>
-        <div class="col mb-2 text-center"><hr class="hr-lightpink">hr-lightpink</div>
-        <div class="col mb-2 text-center"><hr class="hr-purple">hr-purple</div>
-        <div class="col mb-2 text-center"><hr class="hr-teal">hr-teal</div>
-        <div class="col mb-2 text-center"><hr class="hr-yellow">hr-yellow</div>
-      </div>
-    </section>
+    <section class="card-body p-4" id="hrSection"></section>
   </article>
 </body>
 <script src="index.js"></script>

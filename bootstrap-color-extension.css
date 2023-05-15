@@ -1,4 +1,4 @@
-/*Bootstrap Color Extension V1.5.0
+/*Bootstrap Color Extension V1.6.0
 MIT License
 Copyright (c) 2023 Juan Gabriel Maioli
 */
@@ -35,6 +35,10 @@ Copyright (c) 2023 Juan Gabriel Maioli
   --bs-teal-alt: rgba(32,201,151,0.3);/*Seaweed*/
   --bs-yellow: #f5b800;/*Curry Bubbles*/
   --bs-yellow-alt: rgba(245,184,0,0.3);/*Curry Bubbles*/
+  --bs-night: #00007e;/*Oblivion*/
+  --bs-night-alt: rgba(0,0,58,0.3);/*Oblivion*/
+
+
   --bs-primary-alt: rgba(13,110,253,0.3);/*Original from bootstrap*/
   --bs-secondary-alt: rgba(108,117,125,0.3);/*Original from bootstrap*/
   --bs-success-alt: rgba(25,135,84,0.3);/*Original from bootstrap*/
@@ -116,6 +120,9 @@ Copyright (c) 2023 Juan Gabriel Maioli
 .shadow-dark-sm{box-shadow: 2px 2px 4px 1px var(--bs-dark-alt) !important;}
 .shadow-dark-md{box-shadow: 4px 4px 8px 2px var(--bs-dark-alt) !important;}
 .shadow-dark-lg{box-shadow: 6px 6px 12px 3px var(--bs-dark-alt) !important;}
+.shadow-night-sm{box-shadow: 2px 2px 4px 1px var(--bs-night-alt) !important;}
+.shadow-night-md{box-shadow: 4px 4px 8px 2px var(--bs-night-alt) !important;}
+.shadow-night-lg{box-shadow: 6px 6px 12px 3px var(--bs-night-alt) !important;}
 
 
 .shadow-cyan-blur{box-shadow: -1px 20px 40px 14px var(--bs-cyan-alt) !important;}
@@ -141,6 +148,8 @@ Copyright (c) 2023 Juan Gabriel Maioli
 .shadow-info-blur{box-shadow: -1px 20px 40px 14px var(--bs-info-alt) !important;}
 .shadow-light-blur{box-shadow: -1px 20px 40px 14px var(--bs-light-alt) !important;}
 .shadow-dark-blur{box-shadow: -1px 20px 40px 14px var(--bs-dark-alt) !important;}
+.shadow-night-blur{box-shadow: -1px 20px 40px 14px var(--bs-night-alt) !important;}
+
 
 .text-cyan {color: var(--bs-cyan) !important;}
 .text-darkblue {color: var(--bs-darkblue) !important;}
@@ -157,6 +166,7 @@ Copyright (c) 2023 Juan Gabriel Maioli
 .text-purple {color: var(--bs-purple) !important;}
 .text-teal {color: var(--bs-teal) !important;}
 .text-yellow {color: var(--bs-yellow) !important;}
+.text-night {color: var(--bs-night) !important;}
 
 .bg-cyan {background-color: var(--bs-cyan) !important;}
 .bg-darkblue {background-color: var(--bs-darkblue) !important;}
@@ -173,6 +183,7 @@ Copyright (c) 2023 Juan Gabriel Maioli
 .bg-purple {background-color: var(--bs-purple) !important;}
 .bg-teal {background-color: var(--bs-teal) !important;}
 .bg-yellow {background-color: var(--bs-yellow) !important;}
+.bg-night {background-color: var(--bs-night) !important;}
 
 .border-cyan {border-color: var(--bs-cyan) !important;}
 .border-darkblue {border-color: var(--bs-darkblue) !important;}
@@ -189,23 +200,25 @@ Copyright (c) 2023 Juan Gabriel Maioli
 .border-purple {border-color: var(--bs-purple) !important;}
 .border-teal {border-color: var(--bs-teal) !important;}
 .border-yellow {border-color: var(--bs-yellow) !important;}
+.border-night {border-color: var(--bs-night) !important;}
 
-.hr-cyan {border-top: 1px solid var(--bs-cyan) !important;}
-.hr-danger {border-top: 1px solid #C82333;}
-.hr-darkblue {border-top: 1px solid var(--bs-darkblue) !important;}
-.hr-darkgray {border-top: 1px solid var(--bs-darkgray) !important;}
-.hr-green {border-top: 1px solid var(--bs-green) !important;}
-.hr-indigo{border-top: 1px solid var(--bs-indigo) !important;}
-.hr-lemon {border-top: 1px solid var(--bs-lemon) !important;}
-.hr-lightgray {border-top: 1px solid var(--bs-lightgray) !important;}
-.hr-lightpink {border-top: 1px solid var(--bs-lightpink) !important;}
-.hr-magenta {border-top: 1px solid var(--bs-magenta) !important;}
-.hr-darkmagenta {border-top: 1px solid var(--bs-darkmagenta) !important;}
-.hr-orange {border-top: 1px solid var(--bs-orange) !important;}
-.hr-pink {border-top: 1px solid var(--bs-pink) !important;}
-.hr-purple {border-top: 1px solid var(--bs-purple) !important;}
-.hr-teal {border-top: 1px solid var(--bs-teal) !important;}
-.hr-yellow {border-top: 1px solid var(--bs-yellow) !important;}
+.hr-cyan {border-top: 2px solid var(--bs-cyan) !important;}
+.hr-danger {border-top: 2px solid #C82333;}
+.hr-darkblue {border-top: 2px solid var(--bs-darkblue) !important;}
+.hr-darkgray {border-top: 2px solid var(--bs-darkgray) !important;}
+.hr-green {border-top: 2px solid var(--bs-green) !important;}
+.hr-indigo{border-top: 2px solid var(--bs-indigo) !important;}
+.hr-lemon {border-top: 2px solid var(--bs-lemon) !important;}
+.hr-lightgray {border-top: 2px solid var(--bs-lightgray) !important;}
+.hr-lightpink {border-top: 2px solid var(--bs-lightpink) !important;}
+.hr-magenta {border-top: 2px solid var(--bs-magenta) !important;}
+.hr-darkmagenta {border-top: 2px solid var(--bs-darkmagenta) !important;}
+.hr-orange {border-top: 2px solid var(--bs-orange) !important;}
+.hr-pink {border-top: 2px solid var(--bs-pink) !important;}
+.hr-purple {border-top: 2px solid var(--bs-purple) !important;}
+.hr-teal {border-top: 2px solid var(--bs-teal) !important;}
+.hr-yellow {border-top: 2px solid var(--bs-yellow) !important;}
+.hr-night {border-top: 2px solid var(--bs-night) !important;}
 
 .btn-cyan {color:#fff; background-color: var(--bs-cyan) ;border-color: var(--bs-cyan) ;}
 .btn-cyan:focus {background-color: #0aa1c0 ;border-color: var(--bs-cyan) ;box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.5);}
@@ -252,6 +265,9 @@ Copyright (c) 2023 Juan Gabriel Maioli
 .btn-yellow {color:#fff; background-color: var(--bs-yellow) ;border-color: var(--bs-yellow) ;}
 .btn-yellow:focus{background-color:  var(--bs-yellow);border-color:  var(--bs-yellow) ;box-shadow: 0 0 0 0.25rem rgba(245, 184, 0, 0.5);}
 .btn-yellow:hover {color:#fff; background-color: #c29200 ;border-color: var(--bs-yellow) ;}
+.btn-night {color:#fff; background-color: var(--bs-night) ;border-color: var(--bs-night) ;}
+.btn-night:focus{background-color:  var(--bs-night);border-color:  var(--bs-night) ;box-shadow: 0 0 0 0.25rem rgba(0, 0, 109,0.5);}
+.btn-night:hover {color:#fff; background-color: #0000b1 ;border-color: var(--bs-night) ;}
 
 .btn-outline-cyan {color:var(--bs-cyan) ;border-color: var(--bs-cyan) ;}
 .btn-outline-cyan:focus {background-color: #0aa1c0 ;border-color: var(--bs-cyan) ;box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.5);}
@@ -298,6 +314,9 @@ Copyright (c) 2023 Juan Gabriel Maioli
 .btn-outline-yellow {color:var(--bs-yellow) ;border-color: var(--bs-yellow) ;}
 .btn-outline-yellow:focus{background-color:  var(--bs-yellow);border-color:  var(--bs-yellow) ;box-shadow: 0 0 0 0.25rem rgba(245, 184, 0, 0.5);}
 .btn-outline-yellow:hover {color:#fff; background-color: #c29200 ;border-color: var(--bs-yellow) ;}
+.btn-outline-night {color:var(--bs-night) ;border-color: var(--bs-night) ;}
+.btn-outline-night:focus{background-color:  var(--bs-night);border-color:  var(--bs-night) ;box-shadow: 0 0 0 0.25rem rgba(0, 0, 109,0.5);}
+.btn-outline-night:hover {color:#fff; background-color: #0000b1 ;border-color: var(--bs-night) ;}
 
 .alert-cyan {color: var(--bs-cyan) ;border-color: #bcf1fb; background-color: #ddf8fd} /*border 87%, bg 94%*/
 .alert-darkblue {color: var(--bs-darkblue) ;border-color: #b1c8f4; background-color: #dee8fa}
@@ -314,3 +333,4 @@ Copyright (c) 2023 Juan Gabriel Maioli
 .alert-purple {color: var(--bs-purple) ;border-color: #d0c2eb; background-color: #eee8f8}
 .alert-teal {color: var(--bs-teal) ;border-color: #c0f5e5; background-color: #ecfcf7}
 .alert-yellow {color: var(--bs-yellow) ;border-color: #ffe38f; background-color: #fff0c2}
+.alert-night {color: var(--bs-night) ;border-color: #0000b1; background-color: #3e4aff}

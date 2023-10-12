@@ -1,5 +1,5 @@
+/* eslint-disable no-unused-vars */
 tarjetas()
-// eslint-disable-next-line no-unused-vars
 function copiar(color){
   navigator.clipboard.writeText(color)
 }
@@ -80,8 +80,8 @@ function tarjetas(){
     sombrasMd +=`<div class="col m-5 mb-2 shadow-${colorName}-md rounded card-100">shadow-${colorName}-md</div>`
     sombrasLg +=`<div class="col m-5 mb-2 shadow-${colorName}-lg rounded card-100">shadow-${colorName}-lg</div>`
     sombrasBlur +=`<div class="col m-5 p-4 shadow-${colorName}-blur rounded card-100">shadow-${colorName}-blur</div>`
-    botones +=`<div class="col mb-2"><button class="btn btn-${colorName}">btn-${colorName}</button></div>`
-    botonesOutline +=`<div class="col mb-2"><button class="btn btn-outline-${colorName}">btn-outline-${colorName}</button></div>`
+    botones +=`<div class="col mb-2 d-grid gap-2"><button class="btn btn-${colorName}">btn-${colorName}</button></div>`
+    botonesOutline +=`<div class="col mb-2 d-grid gap-2"><button class="btn btn-outline-${colorName}">btn-outline-${colorName}</button></div>`
     texto +=`<div class="col mb-2 text-${colorName}">text-${colorName}</div>`
     fondosNegros +=`<div class="col m-2 bg-${colorName}">bg-${colorName}</div>`
     fondosBlancos +=`<div class="col m-2 bg-${colorName} text-white">bg-${colorName}</div>`
@@ -124,4 +124,26 @@ function hexToRgb(hex) {
   return hex.replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i,(m, r, g, b) => '#' + r + r + g + g + b + b)
     .substring(1).match(/.{2}/g)
     .map(x => parseInt(x, 16))
+}
+
+const storedTheme = localStorage.getItem('theme')
+const themeIcon = {
+  auto:'<i class="fa-regular fa-circle-half-stroke fa-fw"></i>',
+  dark:'<i class="fa-regular fa-moon-stars fa-fw"></i>',
+  light:'<i class="fa-regular fa-sun fa-fw"></i>'
+}
+
+if (storedTheme != null) {
+  document.documentElement.setAttribute('data-bs-theme', storedTheme)
+  document.querySelector('#btn-theme').innerHTML = themeIcon[storedTheme]
+}else{
+  document.documentElement.setAttribute('data-bs-theme', 'auto')
+  localStorage.setItem('theme', 'auto')
+  document.querySelector('#btn-theme').innerHTML = themeIcon['auto']
+}
+
+function changeTheme(theme){
+  document.documentElement.setAttribute('data-bs-theme', theme)
+  localStorage.setItem('theme', theme)
+  document.querySelector('#btn-theme').innerHTML = themeIcon[theme]
 }

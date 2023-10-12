@@ -31,77 +31,97 @@
     <link rel="stylesheet" href="bootstrap-color-extension.css?version=1.6.0" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+      <!-- ??? pirate fontawesome.com -->
+      <link rel="stylesheet" href="css/all.min.css?version=6.4.0">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&family=Roboto&display=swap');
-      /* .card{box-shadow: 0 4px 8px 0 rgba(185, 134, 134, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);} */
-      .card-200{max-height: 200px;max-width: 180px;}
-      .card-100{min-height: 100px;max-width: 180px;display: flex;justify-content: center;align-items: center;}
-      body{font-family: 'Lato', sans-serif;background-color: #F6F6F6;}
+      body{font-family: 'Lato', sans-serif;}
       h1,h2,h3,h4,h5,h6{font-family: 'Montserrat', sans-serif;}
-
     </style>
   </head>
 <body>
-<div class="container-fluid">
+  <!-- Inicio Toggle modo dark -->
+  <nav class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle z-3">
+    <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center" id="btn-theme" type="button" data-bs-toggle="dropdown"><i class="fa-regular fa-circle-half-stroke fa-fw"></i></button>
+    <ul class="dropdown-menu dropdown-menu-end shadow">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" onclick="changeTheme('light')"><i class="fa-regular fa-sun fa-fw"></i>&nbsp;Claro</button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" onclick="changeTheme('dark')"><i class="fa-regular fa-moon-stars fa-fw"></i>&nbsp;Oscuro</button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" onclick="changeTheme('auto')"><i class="fa-regular fa-circle-half-stroke fa-fw"></i>&nbsp;Auto</button>
+      </li>
+    </ul>
+  </nav>
+  <!-- Fin Toggle modo dark -->
+  <main class="container-fluid">
+  <article class="row">
+    <section class="col">
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Colores</h2></section>
+        <section class="card-body" id="tarjetasDeColores">
+        </section>
+      </article>
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Sombras</h2></section>
+        <section class="card-body">
+          <article class="card mb-3">
+            <section class="card-header"><h4 class="text-darkgray">Sombras Sd</h4></section>
+            <section class="card-body" id="sombrasDeColoresSm"></section>
+          </article>
+          <article class="card mb-3">
+            <section class="card-header"><h4 class="text-darkgray">Sombras Md</h4></section>
+            <section class="card-body" id="sombrasDeColoresMd"></section>
+          </article>
+          <article class="card mb-3">
+            <section class="card-header"><h4 class="text-darkgray">Sombras Lg</h4></section>
+            <section class="card-body" id="sombrasDeColoresLg"></section>
+          </article>
+          <article class="card mb-3">
+            <section class="card-header"><h4 class="text-darkgray">Sombras Blur</h4></section>
+            <section class="card-body" id="sombrasDeColoresBlur"></section>
+          </article>
+      </article>
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Botones</h2></section>
+        <section class="card-body" id="botonesDeColores"></section>
+      </article>
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Botones Outline</h2></section>
+        <section class="card-body p-4" id="botonesOutlineDeColores"></section>
+      </article>
+    
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Color de Texto</h2></section>
+        <section class="card-body p-4" id="textoDeColores"></section>
+      </article>
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Fondos con Textos en negro</h2></section>
+        <section class="card-body p-4" id="fondosTextosNegros"></section>
+      </article>
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Fondos con Textos en blanco</h2></section>
+        <section class="card-body p-4" id="fondosTextosBlancos"></section>
+      </article>
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Bordes</h2></section>
+        <section class="card-body p-4" id="bordesSection"></section>
+      </article>
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Alertas</h2></section>
+        <section class="card-body p-4" id="alertasSection"></section>
+      </article>
+      <article class="card m-4 shadow-dark-lg">
+        <section class="card-header"><h2 class="text-darkgray">Linea HR</h2></section>
+        <section class="card-body p-4" id="hrSection"></section>
+      </article>
 
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Colores</h2></section>
-    <section class="card-body" id="tarjetasDeColores">
     </section>
   </article>
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Sombras</h2></section>
-    <section class="card-body">
-      <article class="card mb-3">
-        <section class="card-header"><h4 class="text-darkgray">Sombras Sd</h4></section>
-        <section class="card-body" id="sombrasDeColoresSm"></section>
-      </article>
-      <article class="card mb-3">
-        <section class="card-header"><h4 class="text-darkgray">Sombras Md</h4></section>
-        <section class="card-body" id="sombrasDeColoresMd"></section>
-      </article>
-      <article class="card mb-3">
-        <section class="card-header"><h4 class="text-darkgray">Sombras Lg</h4></section>
-        <section class="card-body" id="sombrasDeColoresLg"></section>
-      </article>
-      <article class="card mb-3">
-        <section class="card-header"><h4 class="text-darkgray">Sombras Blur</h4></section>
-        <section class="card-body" id="sombrasDeColoresBlur"></section>
-      </article>
-  </article>
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Botones</h2></section>
-    <section class="card-body" id="botonesDeColores"></section>
-  </article>
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Botones Outline</h2></section>
-    <section class="card-body p-4" id="botonesOutlineDeColores"></section>
-  </article>
 
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Color de Texto</h2></section>
-    <section class="card-body p-4" id="textoDeColores"></section>
-  </article>
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Fondos con Textos en negro</h2></section>
-    <section class="card-body p-4" id="fondosTextosNegros"></section>
-  </article>
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Fondos con Textos en blanco</h2></section>
-    <section class="card-body p-4" id="fondosTextosBlancos"></section>
-  </article>
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Bordes</h2></section>
-    <section class="card-body p-4" id="bordesSection"></section>
-  </article>
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Alertas</h2></section>
-    <section class="card-body p-4" id="alertasSection"></section>
-  </article>
-  <article class="card m-4 shadow-dark-lg">
-    <section class="card-header"><h2 class="text-darkgray">Linea HR</h2></section>
-    <section class="card-body p-4" id="hrSection"></section>
-  </article>
+</main>
 </body>
 <script src="index.js"></script>
 </html>
